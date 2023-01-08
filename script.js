@@ -117,3 +117,39 @@ const observer = new IntersectionObserver((entries => {
 
 const hidden = document.querySelectorAll('.hidden');
 hidden.forEach((el)=>observer.observe(el));
+
+// realtime rendring projects
+
+const projects = [
+    {
+        title: "sid-share",
+        tags: "#MongoDB #GraphQL",
+        gif: "https://user-images.githubusercontent.com/56957437/159137865-e903e1f5-687c-412a-86b4-05791173b57a.gif",
+        description: "This is my attemp to make a text based social media application using MongoDB for database",
+        link: "https://github.com/s166harth/sid-share"
+    }
+]
+
+
+var renderpros = () =>{
+    var projectdiv = document.getElementsByClassName('projects')[0];
+    for(let i=0;i<projects.length;i++)
+    {
+        let project = document.createElement('div');
+        project.className = 'project';
+        
+        project.innerHTML = `
+        
+         <h3>${projects[i].title}</h3>
+                <img src="${projects[i].gif}" alt="Oops! I guess there's an issue with github" srcset="">
+                <span>${projects[i].tags}</span>
+                <p>${projects[i].description}</p>
+                <a href="${projects[i].link}">Go To the project!!</a>
+        
+        `
+        projectdiv.appendChild(project);
+
+    }
+
+}
+renderpros();

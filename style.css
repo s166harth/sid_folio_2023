@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -143,8 +144,9 @@ nav span{
     gap: 2px;
 }
 .project{
+    font-family: 'Roboto Mono', monospace;
     display: flex;
-    background-color: aqua;
+    background-color: rgb(0, 119, 255);
     flex-direction: column;
     overflow-wrap: break-word;
     width: 30rem;
@@ -152,6 +154,13 @@ nav span{
     margin-top: 2rem;
     align-items: center;
     border-radius: 2rem;
+    color: black;
+    transition: 1s;
+}
+.project:hover{
+    background-color: aqua;
+    width: 40rem;
+ 
 }
 .project img{
     height:20rem;
@@ -159,8 +168,10 @@ nav span{
 }
 .hidden{
     opacity: 0;
-    transition: 1s;
+    transition: 2s;
+    margin-left: -100px;
 }
 .show{
     opacity: 1;
+    margin-left: 3rem;
 }
