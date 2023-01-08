@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
-
+    background-image:url(./low-poly-grid-haikei.png);
 }
 nav{
     position: fixed;
@@ -56,6 +56,7 @@ nav span{
     width: 100vw;
     display: flex;
     color: #fff;
+   
 }
 .rightside{
     position: absolute;
@@ -110,6 +111,21 @@ nav span{
 .info{
     font-size: 1.5rem;
     margin-top: 3rem;
+}
+
+
+.spacer{
+    margin-top: 15rem;
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 960/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url(./wave-haikei.svg);
 }
 
 #projects{
@@ -174,4 +190,27 @@ nav span{
 .show{
     opacity: 1;
     margin-left: 3rem;
+}
+
+#blogs{
+    margin-top: 2rem;
+}
+#blogs h1{
+    margin-left: 70vw;
+
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(0, 247, 255),
+      0 0 82px rgb(0, 238, 255),
+      0 0 92px rgb(0, 225, 255),
+      0 0 102px rgb(0, 255, 255),
+      0 0 151px rgb(0, 247, 255);
+}
+.blogbackground{
+    z-index: -1;
 }
