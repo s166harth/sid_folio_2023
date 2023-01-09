@@ -193,7 +193,7 @@ var renderpros = () =>{
                 <img src="${projects[i].gif}" alt="Oops! I guess there's an issue with github" srcset="">
                 <span>${projects[i].tags}</span>
                 <p>${projects[i].description}</p>
-                <a href="${projects[i].link}">Go To the project!!</a>
+                <a href="${projects[i].link}" target="_blank" rel="noopener noreferrer">Go To the project!!</a>
         
         `
         projectdiv.appendChild(project);
@@ -209,4 +209,29 @@ renderpros();
 // redering blogs
 fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@siddharthsagar2019')
   .then((response) => response.json())
-  .then((data) => console.log(data));
+  .then((data) => {
+    console.log(data);
+    let blogs = document.getElementsByClassName("blogsonright")[0];
+
+    for(let i=0;i<3;i++)
+    {
+      let blog = document.createElement('div');
+      blog.className = "blog"
+      blog.style.backgroundImage = `url(${data.items[i].thumbnail})`;
+      blog.innerHTML = `
+      <h3>${data.items[i].title}</h3>
+      <span>${data.items[i].pubDate}</span>
+      <p class="categories"></p>
+      <a href="${data.items[i].link}" target="_blank" rel="noopener noreferrer">Go to blog</a>
+      
+      `
+      for(let j =0;j<data.items[i].categories.length;j++)
+      {
+      blog.getElementsByClassName("categories")[0].innerText += data.items[i].categories[j] + " ";
+
+      }
+      blogs.appendChild(blog);
+    }
+
+
+  });

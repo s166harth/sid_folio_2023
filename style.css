@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 body{
     margin: 0;
@@ -213,4 +214,74 @@ nav span{
 }
 .blogbackground{
     z-index: -1;
+}
+
+.blogsection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.subscribelinks{
+    color: #fff;
+    width: 70vw;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    position: absolute;
+    margin-left: 4rem;
+
+}
+.subscribelinks .substack{
+    color: orange;
+    text-decoration: none;
+}
+.subscribelinks .medium{
+    color: rgb(120, 122, 124);
+    text-decoration: none;
+}
+.blog{
+    color: rgb(6, 6, 6);
+    /* background-color: red; */
+    max-width: 25vw;
+    height: 20rem;
+    overflow-wrap: break-word;
+    padding: 2rem;
+    border-radius: 140px 0 140px 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   background-color: rgb(18, 77, 180);
+   margin-top: 2rem;
+    transition: 0.1s;
+    
+}
+.blog a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: cadetblue;
+    border-radius: 40px;
+    color: black;
+    transition: 0.5s;
+}
+.blog a:hover{
+    font-size: 30px;
+    border-radius: 0%;
+    background-color: crimson;
+}
+.blog p{
+    font-size: 20px;
+}
+
+
+.blog h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+.blog:hover{
+    border-radius: 0 140px 0 140px;
+    background-image: none;
+    background-color: rgba(0, 255, 255, 0.861);
+    color: black;
+}
+.blogsonright{
+    position: absolute;
+    margin-left: 80rem;
 }
