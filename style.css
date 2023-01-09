@@ -16,12 +16,14 @@ nav{
     width: 100vw;
     z-index: 20;
 }
-nav span{
+nav span a{
+    text-decoration: none;
     margin-top: 30px;
     margin-left: 20px;
     font-size: 4rem;
     font-family: Reenie Beanie;
     color: aliceblue;
+    
 }
 .links
 {
@@ -284,4 +286,206 @@ nav span{
 .blogsonright{
     position: absolute;
     margin-left: 80rem;
+}
+#contacts{
+    margin-top: 30rem;
+
+}
+
+#contacts h1{
+    margin-left: 20rem;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(0, 247, 255),
+      0 0 82px rgb(0, 238, 255),
+      0 0 92px rgb(0, 225, 255),
+      0 0 102px rgb(0, 255, 255),
+      0 0 151px rgb(0, 247, 255);
+}
+.linkedin{
+    margin-top: 2rem;
+    color: #fff;
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: rgb(64, 91, 224);
+    border-radius: 4rem;
+
+}
+
+.linkedin a{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: aqua;
+}
+.linkedin:hover{
+    margin-left: 40rem;
+}
+.linkedin p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
+}
+.github{
+    margin-top: 2rem;
+    color: rgb(255, 255, 255);
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: rgb(18, 13, 13);
+    border-radius: 4rem;
+
+}
+
+.github a{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.github:hover{
+    margin-left: 40rem;
+}
+.github p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
+}
+.email{
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: rgb(255, 234, 0);
+    border-radius: 4rem;
+
+}
+
+.emaildiv{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.emaildiv span{
+    font-size: 30px;
+}
+.email:hover{
+    margin-left: 40rem;
+}
+.email p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
+}
+
+.goodreads{
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: bisque;
+    border-radius: 4rem;
+
+}
+
+.goodreads a{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.goodreads:hover{
+    margin-left: 40rem;
+}
+.goodreads p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
+}
+
+.spotify{
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: rgb(13, 255, 0);
+    border-radius: 4rem;
+
+}
+
+.spotify a{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.spotify:hover{
+    margin-left: 40rem;
+}
+.spotify p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
+}
+.chess{
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4rem;
+
+}
+
+.chess a{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.chess:hover{
+    margin-left: 40rem;
+}
+.chess p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
+}
+
+#footer{
+    
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+  
+    margin-top: -60rem;
 }

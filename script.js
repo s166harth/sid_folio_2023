@@ -235,3 +235,9 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sid
 
 
   });
+
+var copy = () => {
+  var copyText = "siddharthsagar2019@gmail.com";
+   navigator.clipboard.writeText(copyText);
+  alert("email copied to your clipboard");
+}
