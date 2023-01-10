@@ -7,19 +7,19 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
-    background-image:url(./low-poly-grid-haikei.png);
 }
 nav{
-    position: fixed;
+    position: relative;
     display: flex;
-    gap: 4rem;
+    gap: 4vw;
     width: 100vw;
     z-index: 20;
 }
 nav span a{
+    position: absolute;
     text-decoration: none;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 80px;
     font-size: 4rem;
     font-family: Reenie Beanie;
     color: aliceblue;
@@ -56,33 +56,43 @@ nav span a{
 
 
 #about{
-    width: 100vw;
+    width: 100%;
     display: flex;
     color: #fff;
+    flex-wrap: wrap;
+    
    
 }
+
 .rightside{
-    position: absolute;
-    flex: none;      
-    margin-left: 30vw;
-    margin-top: -7rem;
-    height: 80vh;
+    
+    
+
+    
+   position: relative;
+    /* margin-top: -7rem; */
+    height: 50rem;
+   /* overflow: hidden; */
 }
 .rightside img{
     position: absolute;
     width: 40vw;
-    margin-top: -5rem;
-    height: 110vh;
-    margin-left: 30vw;
+    /* margin-top: -5rem; */
+    height: 60rem;
+    overflow: hidden;
+    /* margin-left: 20vw; */
 }
 .glitch{
     position: absolute;
     overflow: hidden;
     margin-top: 10rem;
-    margin-left: 40rem;
+    height: inherit;
+    margin-left: 60px;
+    /* margin-left: 40rem; */
     z-index: 2;
 }
 .glitchbox{
+    overflow: hidden;
     position:relative;
     background-color: rgb(12, 239, 235);
 
@@ -90,8 +100,11 @@ nav span a{
 
 
 .leftside{
+   
+    width: 50%;
     margin-top: 20rem;
-    margin-left: 10rem;
+    margin-left: 5vw;
+    overflow-wrap: break-word;
 }
 .leftside h1{
     font-family: 'Press Start 2P', cursive;
@@ -159,6 +172,7 @@ nav span a{
     position: relative;
     max-width: 100%;
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
 }
@@ -215,19 +229,23 @@ nav span a{
       0 0 151px rgb(0, 247, 255);
 }
 .blogbackground{
+    position: absolute;
+    margin-top: -40vh;
     z-index: -1;
 }
 
 .blogsection{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
 }
 .subscribelinks{
     color: #fff;
-    width: 70vw;
+    width: 60%;
+    /* height: 80vh; */
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
-    position: absolute;
+    position: relative;
     margin-left: 4rem;
 
 }
@@ -242,12 +260,12 @@ nav span a{
 .blog{
     color: rgb(6, 6, 6);
     /* background-color: red; */
-    max-width: 25vw;
+    width: 25vw;
     height: 20rem;
     overflow-wrap: break-word;
     padding: 2rem;
     border-radius: 140px 0 140px 0;
-    position: relative;
+    position:relative;
     align-items: center;
     justify-content: center;
    background-color: rgb(18, 77, 180);
@@ -284,13 +302,12 @@ nav span a{
     color: black;
 }
 .blogsonright{
-    position: absolute;
-    margin-left: 80rem;
+     position: relative; 
+     display: flex;
+     flex-direction: column;
+     /* margin-left: 50vw; */
 }
-#contacts{
-    margin-top: 30rem;
 
-}
 
 #contacts h1{
     margin-left: 20rem;
@@ -458,7 +475,7 @@ nav span a{
     margin-left: 30rem;
     display: flex;
     gap: 40px;
-    width: 50vw;
+    width: 50%;
     align-items: center;
     transition: 0.1sec;
     background-color: rgb(255, 255, 255);
@@ -481,11 +498,232 @@ nav span a{
      font-size: 2rem;
 }
 
-#footer{
-    
-    width: 100vw;
+
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  z-index: 2000;
+}
+.spacer2{
+    margin-top: -80rem;
     position: absolute;
     z-index: -1;
-  
-    margin-top: -60rem;
+    aspect-ratio: 960/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+.layer2{
+    background-image: url(./new-footer.svg);
+}
+
+.dropbtn {
+  background-color: #00000000;
+  color: white;
+  margin-top: 30px;
+  display: none;
+  border-radius: 40rem;
+  font-size: 3rem;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+
+.dropdown {
+    display: none;
+    margin-right: 20px;
+  position: relative;
+  
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  
+  width: 100vw;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: rgb(0, 195, 255);}
+
+
+.shownav {display:block;}
+
+@media screen and (max-width: 1000px) {
+  
+  .dropdown{
+    display: inline-block;
+    
+  }
+  .links{
+    display: none;
+  }
+  nav span a{
+    margin-left: 7rem;
+    
+  }
+  #about{
+    flex-direction: column;
+  }
+  .rightside img{
+    width: 100%;
+    
+  }
+  .rightside{
+    margin-left: 0;
+  }
+
+  .leftside{
+    margin-left: -1rem;
+    width: 100%;
+    margin-top: 10rem;
+  }
+  .leftside h1{
+    font-size: 2rem;
+  }
+  .scrambledtext{
+    font-size: 2rem;
+  }
+  .info{
+    margin-right: 12rem;
+  }
+  .glitch{
+    margin-left: -20px;
+    width: 100%;
+}
+#projects h1{
+    margin-left: 2rem;
+}
+.projects{
+    grid-template-columns: 1fr;
+}
+.project{
+    margin-left: 1rem;
+    width: 80%;
+    color: #fff;
+}
+.project img{
+    border-radius: 40rem;
+}
+.project a{
+    color: #fff;
+    text-decoration: none;
+}
+#blogs h1{
+    margin-left: 1rem;
+}
+.blogsonright{
+    
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+}
+.blog{
+    width: 80vw;
+}
+.blogsection{
+    flex-direction: column;
+    /* margin-top: 10vh; */
+}
+#contacts h1{
+    margin-left: 1rem;
+}
+
+.linkedin{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.linkedin p{
+    margin-left: 1rem;
+}
+.github{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.github p{
+    margin-left: 1rem;
+}
+.email{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.email p{
+    margin-left: 1rem;
+}
+.goodreads{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.goodreads p{
+    margin-left: 1rem;
+}
+.spotify{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.spotify p{
+    margin-left: 1rem;
+}
+.chess{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.chess p{
+    margin-left: 1rem;
+}
+.footer{
+    margin-top: 0;
+}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+   
+
+}
+

@@ -241,3 +241,36 @@ var copy = () => {
    navigator.clipboard.writeText(copyText);
   alert("email copied to your clipboard");
 }
+
+// making navbar sticky
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementsByClassName("navbar")[0];
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// hamburgericon
+function menu() {
+  document.getElementById("myDropdown").classList.toggle("shownav");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('shownav')) {
+        openDropdown.classList.remove('shownav');
+      }
+    }
+  }
+} 
