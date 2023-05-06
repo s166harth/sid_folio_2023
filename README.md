@@ -15,7 +15,7 @@ The Personal Portfolio website includes the following features:
 
 ## Installation
 
-As this is a website, there is no installation required. Simply navigate to https://www.itssid.netlify.app in your web browser to view the website.
+As this is a website, there is no installation required. Simply navigate to https://itssid.netlify.app in your web browser to view the website.
 
 ## Usage
 
