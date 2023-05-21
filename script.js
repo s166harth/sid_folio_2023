@@ -121,6 +121,32 @@ hidden.forEach((el)=>observer.observe(el));
 // realtime rendring projects
 
 const projects = [
+  {
+    title: "Quant Trading Terminal",
+    tags:"#python #firebase #React #Javascript",
+    description:"Quant Trading Terminal is a web application that allows users to develop, test, and execute quantitative trading strategies. This project was developed as a B.Tech final year project.",
+    link:"https://github.com/s166harth/Quant-trading-terminal",
+    gif:"https://user-images.githubusercontent.com/56957437/211207417-5f39daf9-e1c1-40ea-ae49-01552d67b2f2.png"
+
+  },
+  {
+    title:"Placement Cell Web app",
+    tags:"#nodejs #javascript",
+    description:"A plavement cell admin panel for managing student data",
+    link:"https://placementcellsid.onrender.com",
+    gif:"https://user-images.githubusercontent.com/56957437/239766971-ba097445-2bbc-412b-ad79-a1ae1d088b56.png"
+  },
+
+  {
+    title:"Polling API",
+    tags:"#nodejs",
+    description:"A polling api with complete solutions for posting and manipulating options and question and a voting system",
+
+    link:"https://pollingapi-y68j.onrender.com",
+    gif:"https://user-images.githubusercontent.com/56957437/239766971-ba097445-2bbc-412b-ad79-a1ae1d088b56.png"
+    
+  },
+ 
     {
         title: "sid-share",
         tags: "#MongoDB #GraphQL",
@@ -142,6 +168,14 @@ const projects = [
       gif: "https://user-images.githubusercontent.com/56957437/211206827-3fd1dbc4-110a-4296-91f9-84efe2a495b4.png",
       link: "https://github.com/s166harth/CN_SKILLTEST_FRONTEND_2",
     },
+     {
+    title:"CSV Project",
+    tags:"#nodejs",
+    description:"A web app to visualise csv data",
+    link:"https://csvsid.onrender.com",
+    gif:"https://user-images.githubusercontent.com/56957437/239766971-ba097445-2bbc-412b-ad79-a1ae1d088b56.png"
+
+  },
     {
       title: "Stock-Screener",
       tags: "#Python #streamlit",

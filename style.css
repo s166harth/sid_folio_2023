@@ -325,6 +325,19 @@ nav span a{
       0 0 102px rgb(0, 255, 255),
       0 0 151px rgb(0, 247, 255);
 }
+.twitter{
+    margin-top: 2rem;
+    color: #fff;
+    margin-left: 30rem;
+    display: flex;
+    gap: 40px;
+    width: 50vw;
+    align-items: center;
+    transition: 0.1sec;
+    background-color: rgb(0, 238, 255);
+    border-radius: 4rem;
+
+}
 .linkedin{
     margin-top: 2rem;
     color: #fff;
@@ -339,6 +352,14 @@ nav span a{
 
 }
 
+
+.twitter a{
+    margin-top: 30px;
+    margin-left: 30px; 
+       text-decoration: none;
+    font-size: 2rem;
+    color: aqua;
+}
 .linkedin a{
     margin-top: 30px;
     margin-left: 30px; 
@@ -346,8 +367,15 @@ nav span a{
     font-size: 2rem;
     color: aqua;
 }
+.twitter:hover{
+    margin-left: 40rem;
+}
 .linkedin:hover{
     margin-left: 40rem;
+}
+.twitter p{
+     font-family: 'Playfair Display', serif;
+     font-size: 2rem;
 }
 .linkedin p{
      font-family: 'Playfair Display', serif;
@@ -671,10 +699,18 @@ nav span a{
     margin-left: 1rem;
 }
 
+.twitter{
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
 .linkedin{
     margin-left: 1rem;
     flex-direction: column;
     width: 80%;
+}
+.twitter p{
+    margin-left: 1rem;
 }
 .linkedin p{
     margin-left: 1rem;
@@ -719,6 +755,9 @@ nav span a{
 .chess p{
     margin-left: 1rem;
 }
+.twitter:hover{
+    margin-left: 1rem;
+}
 .linkedin:hover{
     margin-left: 1rem;
 }
@@ -736,6 +775,7 @@ nav span a{
 .chess:hover{
     margin-left: 1rem;
 }
+
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1600px){
