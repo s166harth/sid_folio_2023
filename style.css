@@ -327,7 +327,7 @@ nav span a{
 }
 .twitter{
     margin-top: 2rem;
-    color: #fff;
+    color: #000000;
     margin-left: 30rem;
     display: flex;
     gap: 40px;
@@ -358,7 +358,7 @@ nav span a{
     margin-left: 30px; 
        text-decoration: none;
     font-size: 2rem;
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 .linkedin a{
     margin-top: 30px;
